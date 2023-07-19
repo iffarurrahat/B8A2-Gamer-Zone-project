@@ -227,3 +227,45 @@ nav{
 .tag:hover span{
     color: var(--primary-color);
 }
+
+/* footer */
+footer{
+    background-color: #0B0223;
+    padding: 4rem 0;
+}
+.footer{
+    text-align: center;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.footer-logo-color{
+    color: white;
+}
+.footer-list{
+    font-size: 1.25rem;
+    margin: 3.5rem 0;
+}
+.footer-list a{
+    text-decoration: none;
+}
+.footer-list a, .footer-icons i{
+    color: white;
+    margin-right: 1rem;
+}
+
+.footer-list-tow{
+    font-size: 1.25rem;
+    margin: 1.25rem 0;
+}
+.footer-list-tow a{
+    color: var(--old-heliotrope);
+    text-decoration: none;
+}
+.copy-right{
+    font-size: 1.25rem;
+    color: var(--old-heliotrope);
+}
