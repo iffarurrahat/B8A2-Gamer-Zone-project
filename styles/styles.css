@@ -1,0 +1,229 @@
+/* work sans google font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* custom variables css */
+:root{
+    --primary-color: #F144AE;
+    --secondary-color: #4EC5F7;
+    --dark-blue-back: #0B0223;
+    --off-blue-color: #3C354F;
+    --old-heliotrope: #534C64;
+    /* --linear-gradient: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); */
+}
+/* shared styles */
+.common-color{
+    color: var(--dark-blue-back);
+}
+.primary-btn, .secondary-btn{
+    border-radius: 3rem;
+    border: 0;
+    padding: 20px 40px;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+section{
+    margin: 7.5rem 0;
+}
+.full-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.similar-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-blue-back);
+}
+.similar-para{
+    color: var(--old-heliotrope);
+    font-size: 18px;
+    font-weight: 400;
+}
+.linear-gradient-color{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.banner-content, 
+.banner-img,
+.download-content,
+.download-img{
+    width: 50%;
+}
+.banner-img img,
+.download-img .download-sub-img img{
+    width: 100%;
+}
+/* navbar style */
+nav{
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-container{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    width: 86px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.logo-container p{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.title-color{
+    color: #ff6ac1;
+}
+.nav-items-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-items-container a{
+    text-decoration: none;
+    color: var(--off-blue-color);
+    font-weight: 500px;
+}
+.follow-btn{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 1rem 1.5rem;
+}
+.fa-brands{
+    font-size: 1.5rem;
+    height: 1.5rem;
+}
+.fa-youtube{
+    color: red;
+    margin: 0 1rem 0 1.5rem;
+}
+
+/* banner style */
+.banner-container{
+    background-image: url('../images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-color: cover;
+}
+.banner{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content h3{
+    font-size: 3rem;
+    color: var(--dark-blue-back) ;
+    font-weight: 600px;
+}
+.banner-content h1{
+    font-size: 6rem;
+    font-weight: 800;
+}
+.banner-content p{
+    font-size: 1.25rem;
+    color: var(--old-heliotrope);
+    line-height: 1.75rem;
+}
+.banner-icon{
+    margin-right: 0.75rem;
+}
+.banner-icon-ex{
+    font-size: 1rem ;
+}
+.secondary-btn{
+    background: #4EC5F7;
+}
+.banner-btn{
+    margin-top: 2.5rem;
+}
+
+/* online gamer funny style */
+.online-gamer{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.online-gamer h2{
+    margin-bottom: 1rem;
+}
+.video-box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.video-box-container .single-box img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.video-box-container .single-box p{
+    color: var(--old-heliotrope);
+    font-size: 1rem;
+}
+/* download area style */
+.download-area{
+    display: flex;
+    align-items: center;
+}
+.download-content {
+    text-align: right;
+    margin-right: 10rem;
+}
+.download-img{
+    position: relative;
+}
+.sub-img{
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+    width: 40%;
+    height: 50%;
+}
+/* tags style */
+.tags{
+    display: flex;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    /* justify-items: center; */
+    justify-content: center;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all ease .1s;
+}
+.tag span{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-blue-back);
+}
+.tag:hover{
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 10px;
+}
+.tag:hover span{
+    color: var(--primary-color);
+}
