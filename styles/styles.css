@@ -173,39 +173,79 @@ nav{
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
-.video-box-container .single-box img{
-    width: 100%;
+.single-box-img{
+    position: relative;
     margin-bottom: 1.5rem;
 }
-.video-box-container .single-box p{
+.single-box .single-box-img  img{
+    width: 100%;
+    vertical-align: middle;
+}
+.single-box > p{
     color: var(--old-heliotrope);
     font-size: 1rem;
 }
-/* download area style */
+.box-position{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0b022380;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 50%;
+    display: none;
+}
+.single-box-img:hover > .box-position{
+    display: block;
+    cursor: pointer;
+}
+.box-position i{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.box-position p{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* Play Instantly No Downloads style */
+
 .download-area{
     display: flex;
     align-items: center;
 }
-.download-content {
+.download-content{
+    width: 50%;
     text-align: right;
     margin-right: 10rem;
 }
 .download-img{
+    width: 50%;
     position: relative;
 }
-.sub-img{
+.download-img img{
+    width: 100%;
+}
+.download-img .download-sub-img img{
     position: absolute;
-    bottom: -10%;
+    bottom: -14%;
     left: -20%;
     width: 40%;
     height: 50%;
 }
 /* tags style */
+.tags-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 7.5rem;
+    margin-bottom: 0rem;
+}
 .tags{
     display: flex;
-    gap: 3.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
-    /* justify-items: center; */
     justify-content: center;
 }
 .tag{
@@ -213,6 +253,9 @@ nav{
     align-items: center;
     gap: 1rem;
     transition: all ease .1s;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
 }
 .tag span{
     font-size: 1.25rem;
@@ -221,14 +264,13 @@ nav{
 }
 .tag:hover{
     border: 1px solid var(--primary-color);
-    border-radius: 50px;
-    padding: 10px;
+    cursor: pointer;
 }
 .tag:hover span{
     color: var(--primary-color);
 }
 
-/* footer */
+/* footer styles*/
 footer{
     background-color: #0B0223;
     padding: 4rem 0;
