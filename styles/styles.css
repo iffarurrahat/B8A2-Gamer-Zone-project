@@ -56,11 +56,17 @@ section{
 .banner-content, 
 .banner-img,
 .download-content,
-.download-img{
+.download-img,
+.gamer-img,
+.gamer-content,
+.play-img,
+.play-content{
     width: 50%;
 }
 .banner-img img,
-.download-img .download-sub-img img{
+.download-img .download-sub-img img,
+.gamer-img img,
+.play-img img{
     width: 100%;
 }
 /* navbar style */
@@ -160,6 +166,28 @@ nav{
     margin-top: 2.5rem;
 }
 
+/* we are gamer style */
+.we-are-gamer{
+    display: flex;
+    gap: 3.25rem;
+}
+.gamer-content{
+    text-align: right;
+}
+.gamer-para, .purpose-line{
+    margin: 1.25rem 0 2rem;
+}
+.purpose-line{
+    color: var(--old-heliotrope);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.unleash-line{
+    color: var(--old-heliotrope);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 /* online gamer funny style */
 .online-gamer{
     text-align: center;
@@ -236,6 +264,85 @@ nav{
     width: 40%;
     height: 50%;
 }
+
+/* pPlay Games Online Anywhere style  */
+.play-gamer{
+    display: flex;
+    align-items: center;
+    /* gap: 7rem; */
+}
+.play-img{
+    position: relative;
+}
+.paly-img-sub img{
+    position: absolute;
+    bottom: -16%;
+    right: -16%;
+    width: 40%;
+    height: 50%;
+}
+.play-content {
+    padding-left: 9rem;
+}
+.play-content-title{
+    margin-bottom: 1.25rem;
+}
+
+
+/* career styles*/
+/* .career-bg{
+    background-color: var(--primary-color);
+    background-image: url(../images/career-img-bg.png) ;
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom left;
+    background-color: ;
+} */
+/* .career-container{
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+    color: #ffff;
+    padding: 5.5rem 0;
+} */
+/* .career-content{
+    width: 50%;
+} */
+.career-content h2{
+    /* font-size: 3rem; */
+    /* font-weight: 700; */
+    /* margin-bottom: 1.5rem; */
+}
+/* .career-content > p{
+    font-size: 18px;
+}  */
+/* .career-img{
+    width: 50%;
+}
+.career-list{
+    display: flex;
+    gap: 6rem;
+    margin: 2rem 0 2.5rem;
+} */
+/* .list-items > p{
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+.list-right-side{
+    text-align: right;
+}
+.career-btn{
+    background: #fff ;
+    color: var(--primary-color);
+}
+.career-img{
+    width: 50%;
+    vertical-align: baseline;
+}
+.career-img img{
+    width: 100%;
+} */
+
+
 /* tags style */
 .tags-section{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
