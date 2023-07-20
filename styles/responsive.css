@@ -45,10 +45,10 @@
         padding: 1rem;
     }
     .download-img .download-sub-img img {
-        bottom: -2%;
-        left: -7%;
-        width: 27%;
-        height: 37%;
+        bottom: -4%;
+        left: -5%;
+        width: 34%;
+        height: 40%;
     }
 
     .play-img > img{
@@ -113,13 +113,13 @@
     }
 
     .play-img > img{
-        width: 75%;
+        width: 65%;
     }
     .play-img .paly-img-sub img{
-        width: 25%;
+        width: 21%;
         height: 35%;
         bottom: -7%;
-        right: 2%;
+        right: 10%;
     }
 
     .career-bg {
