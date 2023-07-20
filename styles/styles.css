@@ -60,7 +60,9 @@ section{
 .gamer-img,
 .gamer-content,
 .play-img,
-.play-content{
+.play-content,
+.career-content,
+.career-img{
     width: 50%;
 }
 .banner-img img,
@@ -290,40 +292,34 @@ nav{
 
 
 /* career styles*/
-/* .career-bg{
+.career-bg{
     background-color: var(--primary-color);
     background-image: url(../images/career-img-bg.png) ;
     background-repeat: no-repeat;
     background-position: bottom right, bottom left;
-    background-color: ;
-} */
-/* .career-container{
+    background-size: 50% 100%;
+}
+.career-container{
     display: flex;
     align-items: center;
     gap: 7.5rem;
     color: #ffff;
-    padding: 5.5rem 0;
-} */
-/* .career-content{
-    width: 50%;
-} */
+    padding: 5rem 0;
+}
 .career-content h2{
-    /* font-size: 3rem; */
-    /* font-weight: 700; */
-    /* margin-bottom: 1.5rem; */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
-/* .career-content > p{
+.career-content > p{
     font-size: 18px;
-}  */
-/* .career-img{
-    width: 50%;
-}
+} 
 .career-list{
     display: flex;
     gap: 6rem;
     margin: 2rem 0 2.5rem;
-} */
-/* .list-items > p{
+} 
+.list-items > p{
     font-size: 1.25rem;
     line-height: 2.5rem;
 }
@@ -340,7 +336,7 @@ nav{
 }
 .career-img img{
     width: 100%;
-} */
+}
 
 
 /* tags style */
