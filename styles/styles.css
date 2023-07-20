@@ -359,6 +359,7 @@ nav{
     padding: 10px;
     background-color: #fff;
     border-radius: 50px;
+    border: 1px solid transparent;
 }
 .tag span{
     font-size: 1.25rem;
